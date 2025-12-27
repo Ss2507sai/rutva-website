@@ -51,6 +51,7 @@ nav.scrolled{
   text-transform:uppercase;
   font-size:13px;
   letter-spacing:2px;
+  align-items:center;
 }
 .menu a{position:relative}
 .menu a::after{
@@ -64,6 +65,18 @@ nav.scrolled{
   transition:.3s;
 }
 .menu a:hover::after{width:100%}
+
+/* Instagram icon hover */
+.menu img{
+  width:18px;
+  height:18px;
+  filter:grayscale(100%);
+  transition:.3s;
+}
+.menu img:hover{
+  filter:grayscale(0);
+  transform:scale(1.1);
+}
 
 /* HERO */
 .hero{
@@ -198,9 +211,7 @@ section{padding:110px 6%}
 }
 
 /* INSTAGRAM */
-.insta{
-  text-align:center;
-}
+.insta{text-align:center}
 .insta-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -302,7 +313,9 @@ footer a:hover{color:var(--gold)}
     <a href="#">Women</a>
     <a href="#collections">Collections</a>
     <a href="#contact">Contact</a>
-    <a href="https://www.instagram.com/rutvabyhaarekhaaraju/" target="_blank">📷</a>
+    <a href="https://www.instagram.com/rutvabyhaarekhaaraju/" target="_blank" aria-label="Instagram">
+      <img src="images/instagram.png" alt="Instagram">
+    </a>
   </div>
 </nav>
 
@@ -333,32 +346,6 @@ footer a:hover{color:var(--gold)}
   </div>
 </section>
 
-<section class="categories">
-  <div class="category">
-    <img src="https://i.ibb.co/HfBcQYD3/Screenshot-2025-12-27-at-10-48-33-PM.png">
-    <span>MEN</span>
-  </div>
-  <div class="category">
-    <img src="https://i.ibb.co/dqPGmds/Screenshot-2025-12-27-at-10-48-51-PM.png">
-    <span>WOMEN</span>
-  </div>
-</section>
-
-<section class="about">
-  <h2 class="section-title">ABOUT THE DESIGNER</h2>
-  <p>Rutva by Haarekhaa Raju blends the soul of vintage India with modern luxury.</p>
-</section>
-
-<section class="insta">
-  <h2 class="section-title">FOLLOW US ON INSTAGRAM</h2>
-  <div class="insta-grid">
-    <img src="https://i.ibb.co/MyqgvFpK/Screenshot-2025-12-27-at-10-49-44-PM.png">
-    <img src="https://i.ibb.co/TqHTcXBq/Screenshot-2025-12-27-at-10-49-19-PM.png">
-    <img src="https://i.ibb.co/FkfgqPyK/Screenshot-2025-12-27-at-10-49-06-PM.png">
-    <img src="https://i.ibb.co/HfBcQYD3/Screenshot-2025-12-27-at-10-48-33-PM.png">
-  </div>
-</section>
-
 <section class="contact" id="contact">
   <h2 class="section-title">CONTACT US</h2>
   <div class="contact-wrap">
@@ -378,18 +365,6 @@ footer a:hover{color:var(--gold)}
 </section>
 
 <footer>
-  <div class="footer-grid">
-    <div>
-      <h4>Customer Service</h4>
-      <a href="#">FAQs</a>
-      <a href="#">Shipping</a>
-      <a href="#">Returns</a>
-    </div>
-    <div>
-      <h4>Social</h4>
-      <a href="https://www.instagram.com/rutvabyhaarekhaaraju/" target="_blank">Instagram</a>
-    </div>
-  </div>
   <div class="copy">© 2025 Rutva by Haarekhaa Raju. All rights reserved.</div>
 </footer>
 
